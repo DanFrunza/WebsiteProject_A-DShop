@@ -8,7 +8,7 @@ session_start();
                   $recaptchaResponse = $_POST['g-recaptcha-response'];
 
                   // Verificați răspunsul reCAPTCHA
-                  $secretKey = "6LfpzRMpAAAAAG-ajMLxFCmjNyn5f3ZJMeser_r7"; // Înlocuiți cu cheia secretă reCAPTCHA
+                  $secretKey = "SecretCode"; // Înlocuiți cu cheia secretă reCAPTCHA
                   $verifyUrl = "https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$recaptchaResponse}";
                   $response = file_get_contents($verifyUrl);
                   $responseData = json_decode($response);
@@ -130,7 +130,7 @@ session_start();
                 </div>
                 <br><br>
                 <div class="captcha-container">
-                  <div align="center" class="g-recaptcha"  data-theme="dark" data-badge="inline" data-sitekey="6LfpzRMpAAAAAI_jwTNMrFELO9g5u2aTwALUQNhA"></div>
+                  <div align="center" class="g-recaptcha"  data-theme="dark" data-badge="inline" data-sitekey="SiteKey"></div>
                 </div>
                 <br>
                 <div class="button_submit">
